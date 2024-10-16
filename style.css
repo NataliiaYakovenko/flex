@@ -3,27 +3,25 @@
     margin: 0;
     padding: 0;
 }
-/*.child3 {
-   /* margin-left: auto;*/
 
-
-.outerBlock {
-    border: 5px solid blue;
-    height: 500px;
-}
-
-.innerBlock {
-    border: 5px solid red;
-    padding: 10px;
-    font-size: 2rem;
-}
-.flexParent {
+.parent{
+border: 5px solid blue;
+min-height: 100px;
 display: flex;
-flex-direction: row;
 /*flex-direction: column;*/
-justify-content: center;
-align-items:start;
-gap: 20px;
-flex-wrap: wrap-reverse;
-flex-flow: row-reverse;
+align-items: center;
+flex-direction:row-reverse;
+    
 }
+
+.child {
+border: 5px solid red;
+display: flex;
+flex-direction:row-reverse;
+}
+
+.child3 {
+ order: 6; }
+
+ .child2 {
+    align-self: flex-end; }
