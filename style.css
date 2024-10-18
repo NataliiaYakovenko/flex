@@ -1,15 +1,24 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-section * {
-    margin-bottom: 10px;
+  
 }
 
-article :nth-child(2) {
-    font-style: italic;
+.parent{
+border: 5px solid blue;
+min-height: 150px;
+display: flex;
+
 }
-article :last-child {
-   font-weight: bold;
+.child{
+    border: 5px solid red;
+    width: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 300px;
+
+}
+
+.another-el{
+    border: 5px solid red;
+    width: 200px;   
 }
