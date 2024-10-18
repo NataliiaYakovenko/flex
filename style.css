@@ -7,18 +7,9 @@ section * {
     margin-bottom: 10px;
 }
 
-section :first-child{
-    color: red;
+article :nth-child(2) {
+    font-style: italic;
 }
-section :last-child{
-    color: green;
-}
-section :first-of-type{
-    background-color: blueviolet;
-}
-section :nth-child(2n){
-    color: chartreuse;
-}
-section :nth-child(2n+1){
-    color:deeppink;
+article :last-child {
+   font-weight: bold;
 }
