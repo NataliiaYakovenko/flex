@@ -1,24 +1,53 @@
 *{
     box-sizing: border-box;
-  
+}
+html{
+    --user-photo-size:75px;
 }
 
-.parent{
-border: 5px solid blue;
-min-height: 150px;
-display: flex;
+.user-list{
+    padding: 15px;
 
 }
-.child{
-    border: 5px solid red;
-    width: 200px;
-    flex-grow: 0;
+
+.user-list-item{
+    box-shadow: 0 0 5px gray;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 15px;
+
+}
+.user-image-wrapper{
+    width: var(--user-photo-size);
+    height: var(--user-photo-size);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid purple ;
     flex-shrink: 0;
-    flex-basis: 300px;
 
 }
+.user-image-wrapper img{
+    width: 100%;
+    width: 100%;
+    object-fit: cover;
+   
 
-.another-el{
-    border: 5px solid red;
-    width: 200px;   
+}
+.user-name {
+
+}
+.user-description{
+
+}
+.trash-btn{
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    color: gray;
+    font-size: 32px;
+
+}
+.trash-btn:hover{
+cursor: pointer;
 }
